@@ -43,8 +43,8 @@
 
 
                             <p class="card-text">
-                                <label for="tel">CPF *</label>
-                                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+                                <label for="cpf">CPF *</label>
+                                <input type="number" class="form-control" id="cpf" placeholder="Digite seu CPF" maxlength="11">
                                 Exemplo: 000.000.000-00
                             </p>
 
@@ -64,13 +64,13 @@
 
                             <p class="card-text">
                                 <label for="inputPassword4">Senha *</label>
-                                <input type="senha" class="form-control" id="senha" placeholder="Digite sua senha">
+                                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
 
                             </p>
 
                             <p class="card-text">
                                 <label for="inputPassword4">Confirme a senha *</label>
-                                <input type="confirmeSenha" class="form-control" id="confirmeSenha"
+                                <input type="password" class="form-control" id="confirmeSenha"
                                     placeholder="Digite sua senha novamente ">
 
                             </p>
@@ -91,7 +91,7 @@
                         <p class="card-text">
 
                             <label for="cep">CEP *</label>
-                            <input type="number" class="form-control" id="cep" placeholder="Digite seu CEP">
+                            <input type="number" class="form-control" id="cep" placeholder="Digite seu CEP" maxlength="8">
                             Exemplo : 000.00.000
 
                         </p>
@@ -114,7 +114,7 @@
 
                         <p class="card-text">
 
-                            <label for="complemento">Complemento*</label>
+                            <label for="complemento">Complemento</label>
                             <input type="number" class="form-control" id="numero" placeholder="Complemento">
 
 
@@ -188,7 +188,7 @@
                        </header>
                         <p class="card-text">
                             <label for="tel">Numero do Cartão*</label>
-                            <input type="number" class="form-control" id="numeroCartao" placeholder="Digite os numero do seu cartão">
+                            <input type="number" class="form-control" id="numeroCartao" placeholder="Digite os numero do seu cartão" maxlength="12">
                             Exemplo : 0000.0000.0000
                         </p>
 
@@ -227,15 +227,41 @@
                         <!--  <a href="#" class="btn btn-primary">Go somewhere</a>-->
                     </div>
                 </div>
-                <button class="btn btn-success col-12 p-4" type="submit">Finalizar compra</button>
+                <button class="btn btn-success col-12 p-4" type="button" data-toggle="modal" data-target="#compraFinalizada">Finalizar compra</button>
             </div>
            
         </form>
 
        
-
     </main>
 
+
+    <!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compraFinalizada">
+    Finalizar Compra
+  </button>-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="compraFinalizada" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Compra Realizada com sucesso</h5>
+          <button type="button" class="close" data-toggle="modal" data-target="#compraFinalizada" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         Parabens pela sua compra
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Beleza</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -245,6 +271,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="js/checkout.js"> </script>
 </body>
 
 </html>
