@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="40" height="40" alt="logo">
+            </a>
+            <a>
+                <button type="button" class="btn btn-primary">Continuar comprando</button>
+            </a>
+        </nav>
+
+
+
+    </header>
+
+    <!---->
+
+    <main class="conteiner">
+        <form id="checkout" class="row mt-4 ml-4 mr-4">
+            <div class="col-lg-4">
+                <div class="card text-light bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Dados Pessoais</h5>
+                        <div class="form-group ">
+                            <p class="card-text"> <label for="formGroupExampleInput">Nome *</label>
+                                <input type="text" name="nomeUsuario" class="form-control " id="nomeUsuario"
+                                    placeholder="Digite seu nome completo    ">
+                                Exemplo: Thiago Aruda da Silva
+                            </p>
+
+
+                            <p class="card-text">
+                                <label for="tel">CPF *</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+                                Exemplo: 000.000.000-00
+                            </p>
+
+
+                            <p class="card-text">
+                                <label for="tel">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+                                Exemplo : (11) 97777-7777
+                            </p>
+
+
+
+                            <p class="card-text"> <label for="inputEmail4">Email *</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                                Exemplo: thiago.araujo@gmail.com
+                            </p>
+
+                            <p class="card-text">
+                                <label for="inputPassword4">Senha *</label>
+                                <input type="senha" class="form-control" id="senha" placeholder="Digite sua senha">
+
+                            </p>
+
+                            <p class="card-text">
+                                <label for="inputPassword4">Confirme a senha *</label>
+                                <input type="confirmeSenha" class="form-control" id="confirmeSenha"
+                                    placeholder="Digite sua senha novamente ">
+
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--ENTREGA-->
+
+            <div class="col-lg-4">
+                <div class="card text-light bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Detalhes da Entrega</h5>
+                        <div class="form-group "></div>
+                        <p class="card-text">
+
+                            <label for="cep">CEP *</label>
+                            <input type="number" class="form-control" id="cep" placeholder="Digite seu CEP">
+                            Exemplo : 000.00.000
+
+                        </p>
+
+                        <p class="card-text">
+
+                            <label for="endereco">Endereço *</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Digite seu Endereço">
+                            Exemplo : Avenida 23 de maio
+
+                        </p>
+
+                        <p class="card-text">
+
+                            <label for="numero">Numero *</label>
+                            <input type="number" class="form-control" id="numero" placeholder="Digite o numero">
+
+
+                        </p>
+
+                        <p class="card-text">
+
+                            <label for="complemento">Complemento*</label>
+                            <input type="number" class="form-control" id="numero" placeholder="Complemento">
+
+
+                        </p>
+
+                        <p class="card-text">
+
+                            <label for="bairro">Bairro *</label>
+                            <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">
+
+                        </p>
+
+                        <div class="card-text row p-3">
+                            <div class="">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" class="form-control " id="cidade">
+
+                            </div>
+
+                            <div class="col-4 card-text ">
+                                <label for="cidade">Estado</label>
+                                <select class="form-control">
+
+                                    <option value="SP"> SP</option>
+                                    <option value="RJ"> RJ</option>
+                                    <option value=""> RS</option>
+                                    <option value=""> PR</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            
+                            <input type="radio" id="envioRapido" name="envioRapido" class="custom-control-input">
+                            
+                            <label class="custom-control-label" for="envioRapido"> Envio rapido $50</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                         
+                            <input type="radio" id="normal" name="normal" class="custom-control-input">
+                            
+                            <label class="custom-control-label" for="normal"> Normal $20</label>
+                          </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <!--  <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </p>
+            </div>
+            </div>
+
+
+            <!--FORMA DE PAGAMENTO-->
+
+            <div class="col-lg-4">
+                <div class="card text-light bg-dark">
+                    <div class="card-body">
+                        
+                        <h5 class="card-title">Pagamento</h5>
+                        <header>
+                        <p class="card-text d-flex justify-content-center flex-column p-2">
+                            <label for="text">Produto : Camiseta branca</label>  
+                            <label for="numero">Valor total : $250</label>             
+                        </p>
+                       </header>
+                        <p class="card-text">
+                            <label for="tel">Numero do Cartão*</label>
+                            <input type="number" class="form-control" id="numeroCartao" placeholder="Digite os numero do seu cartão">
+                            Exemplo : 0000.0000.0000
+                        </p>
+
+                        
+                        <div class="card-text row ">
+                            <div class="col-6">
+                                <label for="dataValidade">Data de validade*</label>
+                                <input type="month" class="form-control " id="dataValidade">
+                                <p> Exemplo: Janeiro de 2023</p>
+                            </div>
+
+                            <div class="col-6 card-text">
+                                <label for="codigoDeSeguranca">Código de Segurança</label>
+                                <input type="number" class="form-control " id="codigoDeSeguranca">
+                                 <p>Exemplo: 0000    </p>
+                            </div>
+                        </div>
+                    
+
+                        
+                        <p class="card-text">
+                            <label for="nomeTitular">Nome do Titular *</label>
+                            <input type="text" class="form-control" id="nomeTitular" placeholder="Digite o nome do titular">
+                            Exemplo : Thiago Aroude da Silva
+                        </p>
+
+                        <p class="card-text">
+                            <label for="tel">CPF *</label>
+                            <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF do titular">
+                            Exemplo: 000.000.000-00
+                        </p>
+
+
+
+
+                        <!--  <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+                <button class="btn btn-success col-12 p-4" type="submit">Finalizar compra</button>
+            </div>
+           
+        </form>
+
+       
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
